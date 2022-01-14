@@ -15,9 +15,8 @@ spec:
  labels:
  app: do-kubernetes-sample-app
  spec:
- containers:
  - name: do-kubernetes-sample-app
- image: hyane/do-kubernetes-sample-app:latest
+ image: dockerhub-username/do-kubernetes-sample-app:$COMMIT_SHA1
  ports:
  - containerPort: 80
  name: http
